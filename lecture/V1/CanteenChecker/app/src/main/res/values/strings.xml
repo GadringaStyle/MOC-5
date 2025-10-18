@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Canteen Checker</string>
+    <string name="btnSearch">Search</string>
+    <string name="edtFilter">Filter</string>
+</resources>
