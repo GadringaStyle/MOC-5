@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CanteenCheckerAdminApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/orange</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="buttonStyle">@style/MyButtonStyle</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

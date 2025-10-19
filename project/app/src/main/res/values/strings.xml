@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CanteenCheckerAdminApp</string>
+    <string name="app_logo_description">app logo</string>
+    <string name="app_title">Cantine Checker</string>
+    <string name="app_login_subtitle">please log in to proceed</string>
+    <string name="password_hint">password</string>
+    <string name="username_hint">username</string>
+    <string name="btnLogin_text">Login</string>
+</resources>
