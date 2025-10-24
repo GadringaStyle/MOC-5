@@ -9,7 +9,7 @@ class LoginActivity : Activity() {
     private lateinit var btnLogin: Button;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activitiy_login)
+        setContentView(R.layout.activity_login)
         btnLogin = findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener {
             if(onLogin()){
