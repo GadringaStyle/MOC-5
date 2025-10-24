@@ -1,8 +1,8 @@
 package com.example.canteenchecker.adminapp.api
 
-import CanteenDetails
-import CanteenReviewStatistics
-import ReviewData
+import com.example.canteenchecker.adminapp.models.CanteenDetails
+import com.example.canteenchecker.adminapp.models.CanteenReviewStatistics
+import com.example.canteenchecker.adminapp.models.ReviewData
 
 interface IAdministrationApi {
     fun authenticate(userName: String, password: String): Boolean

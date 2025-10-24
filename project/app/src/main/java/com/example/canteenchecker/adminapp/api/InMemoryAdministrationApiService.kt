@@ -1,9 +1,10 @@
 package com.example.canteenchecker.adminapp.api
 
-import CanteenData
-import CanteenDetails
-import CanteenReviewStatistics
-import ReviewData
+
+import com.example.canteenchecker.adminapp.models.CanteenData
+import com.example.canteenchecker.adminapp.models.CanteenDetails
+import com.example.canteenchecker.adminapp.models.CanteenReviewStatistics
+import com.example.canteenchecker.adminapp.models.ReviewData
 import java.util.LinkedList
 
 class InMemoryAdministrationApiService : IAdministrationApi {
@@ -49,7 +50,7 @@ class InMemoryAdministrationApiService : IAdministrationApi {
     }
 
     override fun getCanteenReviews(): List<ReviewData> {
-        TODO("Not yet implemented")
+        return listOf()
     }
 
     override fun deleteCanteenReviewById(reviewId: Int) {

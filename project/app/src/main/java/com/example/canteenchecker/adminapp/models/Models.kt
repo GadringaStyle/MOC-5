@@ -1,8 +1,9 @@
-import java.util.UUID
+package com.example.canteenchecker.adminapp.models
+
 import java.time.OffsetDateTime
 
 data class CanteenData(
-    val id: UUID? = null,
+    val id: Int,
     val name: String,
     val dish: String,
     var dishPrice: Double,
@@ -28,7 +29,7 @@ data class CanteenReviewStatistics(
 )
 
 data class OwnedCanteenDetails(
-    val id: UUID? = null,
+    val id: Int,
     val name: String,
     val address: String,
     val phoneNumber: String,
@@ -39,7 +40,7 @@ data class OwnedCanteenDetails(
 )
 
 data class ReviewData(
-    val id: UUID? = null,
+    val id: Int,
     val creationDate: OffsetDateTime? = null,
     val creator: String,
     val rating: Int,
