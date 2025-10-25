@@ -17,7 +17,6 @@
         app:layout_constraintHeight_percent="0.7">
 
         <ImageView
-            android:id="@+id/button"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@mipmap/asdf"
