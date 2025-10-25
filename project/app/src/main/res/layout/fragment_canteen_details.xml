@@ -1,10 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-    <TextView
+    <com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:text="banana-joe ist kein echter mensch!"
-        android:layout_height="match_parent">
-    </TextView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/header"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="facility data"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <GridLayout
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="4"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="name"/>
+
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="address"/>
+
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:inputType="textPostalAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+
+                <TextView
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="website"/>
+
+                <EditText
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:inputType="textWebEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+
+                <TextView
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="phone number"/>
+
+                <EditText
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:inputType="phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/header2"
+                app:layout_constraintTop_toTopOf="@id/header2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="current dish"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <GridLayout
+                app:layout_constraintTop_toBottomOf="@+id/header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="dish name"/>
+
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="dish price"/>
+
+                <EditText
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/header3"
+                app:layout_constraintTop_toTopOf="@id/header3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="current dish"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <GridLayout
+                app:layout_constraintTop_toBottomOf="@+id/header3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="current waiting time"/>
+
+                <EditText
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="2"/>
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
