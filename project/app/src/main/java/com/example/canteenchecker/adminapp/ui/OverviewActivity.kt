@@ -6,24 +6,28 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.example.canteenchecker.adminapp.R
+import com.example.canteenchecker.adminapp.api.IAdministrationApi
 import com.example.canteenchecker.adminapp.databinding.ActivityOverviewBinding
 import com.example.canteenchecker.adminapp.misc.ViewPagerAdapter
 import com.example.canteenchecker.adminapp.ui.fragments.CanteenDetailsFragment
 import com.example.canteenchecker.adminapp.ui.fragments.ReviewsFragment
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class OverviewActivity : AppCompatActivity() {
-    private lateinit var viewPagerAdapter: ViewPagerAdapter;
-    private lateinit var binding: ActivityOverviewBinding;
+    @Inject lateinit var apiService: IAdministrationApi
+    private lateinit var viewPagerAdapter: ViewPagerAdapter
+    private lateinit var binding: ActivityOverviewBinding
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         binding = ActivityOverviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.tbaOverview)
         setUpViewPager()
-
+       apiService.getCanteenDetails()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -32,7 +36,7 @@ class OverviewActivity : AppCompatActivity() {
     }
 
     private fun setUpViewPager(){
-        var listOfFragments = listOf(CanteenDetailsFragment(), ReviewsFragment());
+        val listOfFragments = listOf(CanteenDetailsFragment(), ReviewsFragment())
         viewPagerAdapter = ViewPagerAdapter(
             listOfFragments,
             supportFragmentManager,

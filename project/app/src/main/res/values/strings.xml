@@ -5,6 +5,19 @@
     <string name="app_login_subtitle">please log in to proceed</string>
     <string name="password_hint">password</string>
     <string name="username_hint">username</string>
-    <string name="btnLogin_text">Login</string>
+    <string name="btn_login_text">Login</string>
     <string name="toolbar_header_text">welcome back</string>
+    <string name="tab_header_description">navigation header for navigating between canteen details and review page</string>
+    <string name="lbl_canteen_name">canteen name</string>
+    <string name="facility_data_header">facility data</string>
+    <string name="lbl_canteen_address">canteen address</string>
+    <string name="lbl_canteen_website">website</string>
+    <string name="lbl_canteen_phone">phone number</string>
+    <string name="current_dish_header">current dish</string>
+    <string name="lbl_dish_name">dish name</string>
+    <string name="lbl_dish_price">dish price</string>
+    <string name="current_waiting_time_header">current waiting time</string>
+    <string name="lbl_waiting_time_in_minutes">waiting time</string>
+    <string name="suffix_euro">€</string>
+    <string name="suffix_minutes"> minutes</string>
 </resources>
